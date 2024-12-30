@@ -4,13 +4,13 @@ An Alfred workflow for quickly creating notes in your Memos instance.
 
 ## Features
 
-[x] Quickly create new memos from Alfred
-[x] Direct integration with your Memos instance
+- [x] Quickly create new memos from Alfred
+- [x] Optional and default tag support
 
 Coming Soon:
 
-[ ] List recent memos
-[ ] Search memos
+- [ ] List recent memos
+- [ ] Search memos
 
 ## Installation
 
