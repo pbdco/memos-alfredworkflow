@@ -1,3 +1,6 @@
+# Alfred
+Alfred.alfredpreferences
+prefs.plist
 # Python
 __pycache__/
 *.py[cod]
