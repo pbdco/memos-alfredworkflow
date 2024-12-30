@@ -201,7 +201,7 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>memos</string>
+				<string>memo</string>
 				<key>subtext</key>
 				<string>Some message [-t tag1,tag2] (optional)</string>
 				<key>text</key>
