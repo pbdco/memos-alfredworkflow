@@ -45,6 +45,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>375C56FA-AABE-43CF-AC90-D12847B32C2D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3B446BA9-EAE1-42D4-9AEF-6182261BC547</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>69651894-9381-477A-8653-00F77C72DD4E</key>
 		<array>
 			<dict>
@@ -77,11 +90,53 @@
 	<key>description</key>
 	<string>Post memos on memos (usememos.com)</string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>Memos</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>memos open</string>
+				<key>subtext</key>
+				<string>Open memos URL in browser</string>
+				<key>text</key>
+				<string>Go to {var:MEMOS_API_URL}</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>375C56FA-AABE-43CF-AC90-D12847B32C2D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:MEMOS_API_URL}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>3B446BA9-EAE1-42D4-9AEF-6182261BC547</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -164,27 +219,6 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>delimiter</key>
-				<string>-t</string>
-				<key>discardemptyarguments</key>
-				<false/>
-				<key>outputas</key>
-				<integer>0</integer>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>69651894-9381-477A-8653-00F77C72DD4E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -201,6 +235,27 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>30410192-F0BF-4E9D-90F1-A12F783D6D29</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>-t</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>0</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>69651894-9381-477A-8653-00F77C72DD4E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -250,6 +305,20 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 			<real>390</real>
 			<key>ypos</key>
 			<real>310</real>
+		</dict>
+		<key>375C56FA-AABE-43CF-AC90-D12847B32C2D</key>
+		<dict>
+			<key>xpos</key>
+			<real>100</real>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
+		<key>3B446BA9-EAE1-42D4-9AEF-6182261BC547</key>
+		<dict>
+			<key>xpos</key>
+			<real>375</real>
+			<key>ypos</key>
+			<real>55</real>
 		</dict>
 		<key>69651894-9381-477A-8653-00F77C72DD4E</key>
 		<dict>
