@@ -3,40 +3,6 @@ import sys
 import requests
 import argparse
 
-def signin(api_base_url, username, password):
-    """Sign in to Memos using gRPC-web"""
-    endpoint = f"{api_base_url}/memos.api.v1.AuthService/SignIn"
-    
-    headers = {
-        "Content-Type": "application/grpc-web+proto",
-        "Accept": "*/*",
-        "x-grpc-web": "1"
-    }
-    
-    # Create binary payload as seen in the curl request
-    # \u0000\u0000\u0000\u0000\u001a\n\u0005pablo\u0012\u000f2023Espana67945\u0018\u0001
-    payload = b'\x00\x00\x00\x00\x1a\n\x05' + username.encode() + b'\x12\x0f' + password.encode() + b'\x18\x01'
-    
-    try:
-        print(f"Signing in as {username}...")
-        response = requests.post(
-            endpoint,
-            headers=headers,
-            data=payload
-        )
-        print(f"Sign-in response: {response.status_code}")
-        
-        # Get token from cookie
-        cookies = response.cookies
-        token = cookies.get('memos.access-token')
-        if token:
-            return token
-            
-        return None
-    except Exception as e:
-        print(f"Sign in failed: {e}")
-        return None
-
 def create_memo(api_base_url, api_key, content, tags=None, visibility="PRIVATE"):
     """Create a memo using gRPC-web"""
     endpoint = f"{api_base_url}/memos.api.v1.MemoService/CreateMemo"
