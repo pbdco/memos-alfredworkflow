@@ -98,27 +98,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>memos open</string>
-				<key>subtext</key>
-				<string>Open memos URL in browser</string>
-				<key>text</key>
-				<string>Go to {var:MEMOS_API_URL}</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>375C56FA-AABE-43CF-AC90-D12847B32C2D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>skipqueryencode</key>
@@ -134,6 +113,27 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>3B446BA9-EAE1-42D4-9AEF-6182261BC547</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>memos open</string>
+				<key>subtext</key>
+				<string>Open memos URL in browser</string>
+				<key>text</key>
+				<string>Go to {var:MEMOS_API_URL}</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>375C56FA-AABE-43CF-AC90-D12847B32C2D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -288,35 +288,35 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 		<key>0D5CA7D7-94E6-439D-9CC7-70AB3CDD04A8</key>
 		<dict>
 			<key>xpos</key>
-			<real>120</real>
+			<real>115</real>
 			<key>ypos</key>
-			<real>410</real>
+			<real>415</real>
 		</dict>
 		<key>1E5E843E-92A0-4338-8442-3C9783265824</key>
 		<dict>
 			<key>xpos</key>
-			<real>110</real>
+			<real>115</real>
 			<key>ypos</key>
 			<real>180</real>
 		</dict>
 		<key>30410192-F0BF-4E9D-90F1-A12F783D6D29</key>
 		<dict>
 			<key>xpos</key>
-			<real>390</real>
+			<real>360</real>
 			<key>ypos</key>
-			<real>310</real>
+			<real>325</real>
 		</dict>
 		<key>375C56FA-AABE-43CF-AC90-D12847B32C2D</key>
 		<dict>
 			<key>xpos</key>
-			<real>100</real>
+			<real>120</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>55</real>
 		</dict>
 		<key>3B446BA9-EAE1-42D4-9AEF-6182261BC547</key>
 		<dict>
 			<key>xpos</key>
-			<real>375</real>
+			<real>430</real>
 			<key>ypos</key>
 			<real>55</real>
 		</dict>
@@ -325,7 +325,7 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 			<key>xpos</key>
 			<real>300</real>
 			<key>ypos</key>
-			<real>310</real>
+			<real>325</real>
 		</dict>
 		<key>BBAB48B2-22E6-4875-9180-F1F3A1FBC1A0</key>
 		<dict>
@@ -337,9 +337,9 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 		<key>D1BFDADE-C99F-4AC8-A95D-432E30933784</key>
 		<dict>
 			<key>xpos</key>
-			<real>480</real>
+			<real>430</real>
 			<key>ypos</key>
-			<real>280</real>
+			<real>295</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
