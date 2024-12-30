@@ -84,6 +84,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D1BFDADE-C99F-4AC8-A95D-432E30933784</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>852AE123-9E92-4E6E-8524-4715FE5D7D71</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>pbdco</string>
@@ -194,6 +207,27 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 			<string>D1BFDADE-C99F-4AC8-A95D-432E30933784</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Memos</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>852AE123-9E92-4E6E-8524-4715FE5D7D71</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -326,6 +360,13 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 			<real>300</real>
 			<key>ypos</key>
 			<real>325</real>
+		</dict>
+		<key>852AE123-9E92-4E6E-8524-4715FE5D7D71</key>
+		<dict>
+			<key>xpos</key>
+			<real>620</real>
+			<key>ypos</key>
+			<real>295</real>
 		</dict>
 		<key>BBAB48B2-22E6-4875-9180-F1F3A1FBC1A0</key>
 		<dict>

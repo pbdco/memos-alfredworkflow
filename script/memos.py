@@ -77,7 +77,7 @@ def create_memo(api_base_url, api_key, content, tags=None, visibility="PRIVATE")
 
     try:
         print(f"Creating memo: {content}")
-        print(f"Payload hex: {payload.hex()}")  # Debug output
+        # print(f"Payload hex: {payload.hex()}")  # Debug output
         response = requests.post(
             endpoint,
             headers=headers,
