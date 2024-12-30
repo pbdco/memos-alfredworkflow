@@ -22,7 +22,7 @@ Coming Soon:
 
 ## Installation
 
-1. Download the latest release from the [releases page](../../releases)
+1. Download the latest release from the [releases page](https://github.com/pbdco/memos-alfredworkflow/releases)
 2. Double click the downloaded `.alfredworkflow` file to install it in Alfred
 
 ## Configuration
