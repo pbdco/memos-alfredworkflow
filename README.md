@@ -1,6 +1,6 @@
 # Alfred Memos Workflow
 
-An Alfred workflow for quickly creating notes in your Memos (usememos.com) instance.
+An [Alfred](https://alfred.app/) workflow for quickly creating notes in your Memos (usememos.com) instance.
 
 ![image](https://github.com/user-attachments/assets/51682501-47d6-4511-b52d-e259ca605b11)
 
