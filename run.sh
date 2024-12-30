@@ -2,10 +2,10 @@
 set -e
 
 # Add libs to Python path
-export PYTHONPATH="./libs:$PYTHONPATH"
+export PYTHONPATH="./script/libs:$PYTHONPATH"
 
 # Load environment variables
 export $(cat .env | xargs)
 
 # Run the script
-python3 memos.py "$@" 
+python3 ./script/memos.py "$@" 
