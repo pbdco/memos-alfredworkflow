@@ -90,7 +90,7 @@
 	<key>description</key>
 	<string>Post memos on memos (usememos.com)</string>
 	<key>disabled</key>
-	<true/>
+	<false/>
 	<key>name</key>
 	<string>Memos</string>
 	<key>objects</key>
