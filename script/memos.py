@@ -48,18 +48,15 @@ def create_memo(api_base_url, api_key, content, tags=None, visibility="PRIVATE")
         "x-grpc-web": "1"
     }
 
-    # Add tags to content
+    # Start with user provided tags
     tags = tags or []
     
-    # Get default tags from environment variable
+    # Get default tags from environment variable and append them
     default_tags = os.getenv("MEMOS_DEFAULT_TAG")
     if default_tags:
-        # Split by comma and strip whitespace
+        # Split by comma and strip whitespace, then append all non-empty tags
         default_tag_list = [tag.strip() for tag in default_tags.split(',')]
-        # Add each default tag if not already in tags
-        for tag in default_tag_list:
-            if tag and tag not in tags:
-                tags.append(tag)
+        tags.extend([tag for tag in default_tag_list if tag])
     
     # Format tags with hashtags
     hashtags = ' '.join([f'#{tag}' for tag in tags])
