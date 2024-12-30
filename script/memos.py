@@ -18,10 +18,10 @@ def create_memo(api_base_url, api_key, content, tags=None, visibility="PRIVATE")
     tags = tags or []
     
     # Get default tags from environment variable and append them
-    default_tags = os.getenv("MEMOS_DEFAULT_TAG")
-    if default_tags:
+    DEFAULT_TAGS = os.getenv("MEMOS_DEFAULT_TAG")
+    if DEFAULT_TAGS:
         # Split by comma and strip whitespace, then append all non-empty tags
-        default_tag_list = [tag.strip() for tag in default_tags.split(',')]
+        default_tag_list = [tag.strip() for tag in DEFAULT_TAGS.split(',')]
         tags.extend([tag for tag in default_tag_list if tag])
     
     # Format tags with hashtags

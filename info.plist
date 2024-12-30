@@ -174,6 +174,48 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>memo</string>
+				<key>subtext</key>
+				<string>Some message [-t tag1,tag2] (optional)</string>
+				<key>text</key>
+				<string>Write a memo</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>BBAB48B2-22E6-4875-9180-F1F3A1FBC1A0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Memos</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>852AE123-9E92-4E6E-8524-4715FE5D7D71</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -211,42 +253,21 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>delimiter</key>
+				<string>-t</string>
+				<key>discardemptyarguments</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Memos</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>852AE123-9E92-4E6E-8524-4715FE5D7D71</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
+				<key>outputas</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>memo</string>
-				<key>subtext</key>
-				<string>Some message [-t tag1,tag2] (optional)</string>
-				<key>text</key>
-				<string>Write a memo</string>
-				<key>withspace</key>
+				<key>trimarguments</key>
 				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.utility.split</string>
 			<key>uid</key>
-			<string>BBAB48B2-22E6-4875-9180-F1F3A1FBC1A0</string>
+			<string>69651894-9381-477A-8653-00F77C72DD4E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -269,27 +290,6 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>30410192-F0BF-4E9D-90F1-A12F783D6D29</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>delimiter</key>
-				<string>-t</string>
-				<key>discardemptyarguments</key>
-				<false/>
-				<key>outputas</key>
-				<integer>0</integer>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>69651894-9381-477A-8653-00F77C72DD4E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
