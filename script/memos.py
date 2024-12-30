@@ -50,12 +50,20 @@ def create_memo(api_base_url, api_key, content, tags=None, visibility="PRIVATE")
 
     # Add tags to content
     tags = tags or []
-    if "CLI" not in tags:
-        tags.append("CLI")
+    
+    # Get default tags from environment variable
+    default_tags = os.getenv("MEMOS_DEFAULT_TAG")
+    if default_tags:
+        # Split by comma and strip whitespace
+        default_tag_list = [tag.strip() for tag in default_tags.split(',')]
+        # Add each default tag if not already in tags
+        for tag in default_tag_list:
+            if tag and tag not in tags:
+                tags.append(tag)
     
     # Format tags with hashtags
     hashtags = ' '.join([f'#{tag}' for tag in tags])
-    content = f"{content}\n{hashtags}"
+    content = f"{content}\n{hashtags}" if tags else content
 
     # Create binary payload matching exact format from curl
     content_bytes = content.encode()

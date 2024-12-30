@@ -23,6 +23,7 @@ After installation, you'll need to configure:
 
 1. Your Memos instance URL
 2. Your access token (if required)
+3. (Optional) Default tag via `MEMOS_DEFAULT_TAG` environment variable
 
 These can be configured in Alfred's workflow configuration panel.
 
@@ -32,15 +33,21 @@ In Alfred, type:
 - `m` or `memo` or `memos` followed by your note text to create a new memo
 - Optionally, add tags with -t (Separate by comma multiple tags)
 
+Notes:
+- If `MEMOS_DEFAULT_TAG` is set, it will be automatically added to all memos
+- Additional tags specified with `-t` will be combined with the default tag
+
 ## Example:
 
 - Create memo:
 
 `memo Hi! From Alfred`
+# If MEMOS_DEFAULT_TAG=CLI, tags will be: #CLI
 
 - Create memo with tags:
 
 `memo Hi! From Alfred -t HelloWorld,Testing`
+# If MEMOS_DEFAULT_TAG=CLI, tags will be: #CLI #HelloWorld #Testing
 
 - Open your memo webpage in the browser with:
 

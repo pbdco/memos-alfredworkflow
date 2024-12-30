@@ -357,7 +357,7 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Your memos url</string>
+			<string>Your memos site URL</string>
 			<key>label</key>
 			<string>URL</string>
 			<key>type</key>
@@ -385,6 +385,27 @@ python3 ./script/memos.py "$MESSAGE" -t "$TAGS"</string>
 			<string>textfield</string>
 			<key>variable</key>
 			<string>MEMOS_ACCESS_TOKEN</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Adds tag by default. For multiple tags use comma  to separate (tag1,tag2,etc)</string>
+			<key>label</key>
+			<string>Default tag (optional)</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>MEMOS_DEFAULT_TAG</string>
 		</dict>
 	</array>
 	<key>version</key>
