@@ -41,7 +41,8 @@ jobs:
           # Copy workflow files
           cp info.plist workflow/
           cp icon.png workflow/
-          cp prefs.plist workflow/
+          # Copy prefs.plist only if it exists
+          [ -f prefs.plist ] && cp prefs.plist workflow/ || true
 
       - name: Create workflow archive
         run: |
