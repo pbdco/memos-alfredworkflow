@@ -1,6 +1,14 @@
 # Alfred Memos Workflow
 
-An Alfred workflow for quickly creating notes in your Memos instance.
+An Alfred workflow for quickly creating notes in your Memos (usememos.com) instance.
+
+![image](https://github.com/user-attachments/assets/51682501-47d6-4511-b52d-e259ca605b11)
+
+![image](https://github.com/user-attachments/assets/768e0129-8f40-4c2d-ab2b-e2b90e11f07f)
+
+## Download
+
+**[Download workflow from here](https://github.com/pbdco/memos-alfredworkflow/releases/latest/download/Memos.alfredworkflow)**
 
 ## Features
 
