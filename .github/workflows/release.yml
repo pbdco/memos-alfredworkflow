@@ -1,0 +1,55 @@
+name: Release Alfred Workflow
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Prepare workflow structure
+        run: |
+          # Create workflow directory structure
+          mkdir -p workflow/script/libs
+          
+          # Copy Python script and requirements
+          cp script/memos.py workflow/script/
+          cp script/requirements.txt workflow/script/
+          
+          # Install dependencies directly in the workflow directory
+          cd workflow/script
+          pip install --target=libs -r requirements.txt
+          
+          # Clean up unnecessary files
+          find . -type d -name "__pycache__" -exec rm -r {} +
+          find . -type f -name "*.pyc" -delete
+          find . -type f -name "*.pyo" -delete
+          find . -type d -name "*.dist-info" -exec rm -r {} +
+          find . -type d -name "*.egg-info" -exec rm -r {} +
+          cd ../..
+          
+          # Copy workflow files
+          cp info.plist workflow/
+          cp icon.png workflow/
+          cp prefs.plist workflow/
+
+      - name: Create workflow archive
+        run: |
+          cd workflow
+          zip -r ../Memos.alfredworkflow ./*
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: Memos.alfredworkflow
+          generate_release_notes: true 
