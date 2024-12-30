@@ -2,7 +2,7 @@
 
 An [Alfred](https://alfred.app/) workflow for quickly creating posts in your [Memos](https://www.usememos.com/) ([usememos.com](https://www.usememos.com/)) instance.
 
-![image](https://github.com/user-attachments/assets/51682501-47d6-4511-b52d-e259ca605b11)
+![image](https://github.com/user-attachments/assets/03d0907b-4333-413b-85bb-dbadfd5c03be)
 
 ![image](https://github.com/user-attachments/assets/768e0129-8f40-4c2d-ab2b-e2b90e11f07f)
 
