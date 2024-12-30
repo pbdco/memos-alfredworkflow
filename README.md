@@ -55,8 +55,6 @@ Notes:
 
 - Create memo with tags:
 
-*If MEMOS_DEFAULT_TAG=Alfred, tags will be: #Alfred #HelloWorld #Testing*
-
 `memo Hi! From Alfred -t HelloWorld,Testing`
 
 *If MEMOS_DEFAULT_TAG=Alfred, tags will be: #Alfred #HelloWorld #Testing*
