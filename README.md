@@ -1,6 +1,6 @@
 # Alfred Memos Workflow
 
-An [Alfred](https://alfred.app/) workflow for quickly creating notes in your [Memos](https://www.usememos.com/) ([usememos.com](https://www.usememos.com/)) instance.
+An [Alfred](https://alfred.app/) workflow for quickly creating posts in your [Memos](https://www.usememos.com/) ([usememos.com](https://www.usememos.com/)) instance.
 
 ![image](https://github.com/user-attachments/assets/51682501-47d6-4511-b52d-e259ca605b11)
 
